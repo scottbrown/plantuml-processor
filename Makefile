@@ -1,4 +1,4 @@
-package = scottbrown/plantuml-creator
+package = unbounce/plantuml-creator
 tag = latest
 
 default: build
