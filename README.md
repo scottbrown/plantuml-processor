@@ -1,7 +1,8 @@
 # PlantUML Processor Docker Image
 
-This project creates a docker image that knows how to process PlantUML
-files in an inbox/outbox filing system.
+This project creates a docker image that knows how to process
+[PlantUML](http://plantuml.sourceforge.net/) files in an 
+inbox/outbox filing system.
 
 An inbox/outbox filing system is an architecture from
 [batch processing systems](http://en.wikipedia.org/wiki/Batch_processing)
@@ -15,8 +16,15 @@ mounted.
 Use the docker image like so:
 
 ```
-docker run -v path/to/diagrams:/inbox -v path/to/put/artifacts:/outbox unbounce/plantuml-processor
+docker run \
+       -v path/to/diagrams:/inbox \
+       -v path/to/put/artifacts:/outbox \
+       unbounce/plantuml-processor
 ```
+
+where:
+* ``path/to/diagrams`` points to a directory on your machine where the PlantUML diagram files kept.  They can be of any file type (PlantUML will look in each non-binary file for specific tags).
+* ``path/to/put/artifacts`` points to a directory where the PlantUML PNG deliverables are stored.
 
 ## Building
 
