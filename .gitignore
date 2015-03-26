@@ -1,0 +1,3 @@
+# Ignore derived test files
+tests/outbox/*.png
+
