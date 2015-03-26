@@ -1,4 +1,4 @@
-package = unbounce/plantuml-creator
+package = unbounce/plantuml-processor
 tag = latest
 
 default: build
