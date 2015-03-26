@@ -12,6 +12,14 @@ mounted.
 
 ## Getting Started
 
+Use the docker image like so:
+
+```
+docker run -v path/to/diagrams:/inbox -v path/to/put/artifacts:/outbox unbounce/plantuml-processor
+```
+
+## Building
+
 Build the docker image based on the project's [Dockerfile](Dockerfile).
 
 ```
@@ -27,7 +35,7 @@ namespace given in the [Makefile](Makefile).
 make dist
 ```
 
-The docker image will be uploaded as ``scottbrown/plantuml-processor``, or
+The docker image will be uploaded as ``unbounce/plantuml-processor``, or
 as defined in the [Makefile](Makefile).
 
 ## Testing
