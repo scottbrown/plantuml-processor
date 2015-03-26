@@ -13,6 +13,6 @@ dist: build
 	docker push $(package):$(tag)
 
 test: build
-	docker run -v `pwd`/tests/inbox:/inbox -v `pwd`/tests/outbox:/outbox scottbrown/plantuml-creator:latest
+	docker run -v `pwd`/tests/inbox:/inbox -v `pwd`/tests/outbox:/outbox $(package):$(tag)
 	test -e tests/outbox/sample.png
 
